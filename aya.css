@@ -1,0 +1,50 @@
+:target
+::selection,
+::selection {
+  background: #404;
+  color: #bae;
+}
+
+:root:target,
+:root {
+  background-color: mediumpurple;
+  background-image: linear-gradient(mediumpurple, floralwhite);
+  color: #404;
+}
+
+.plush {
+  background-color: #bae;
+  box-shadow: 0 0 1em 1em #bae;
+}
+
+.blush {
+  text-shadow: 1vw 0 1vw, -1vw 0 1vw;
+}
+
+:any-link { 
+  color: rebeccapurple;
+  transition: 800ms ease-out;
+}
+
+:focus { 
+  color: #404;
+  outline-color: #404;
+  background-color: deepskyblue;
+  box-shadow: 0 0 1em 1em deepskyblue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-image: linear-gradient(mediumpurple, peachpuff);
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    background-image: linear-gradient(gainsboro, floralwhite);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  :any-link { transition: none }
+}

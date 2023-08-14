@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 1200">
+  <title>hoop</title>
+  <style>
+    svg { background: transparent }
+    circle { filter: url(#jel) }
+  </style>
+  <filter id="jel">
+    <feTurbulence
+      type="turbulence"
+      baseFrequency=".08"
+      numOctaves="1"
+      result="turbulence" />
+    <feDisplacementMap
+      in2="turbulence"
+      in="SourceGraphic"
+      scale="10"
+      xChannelSelector="R"
+      yChannelSelector="G" />
+  </filter>
+  <circle fill="mediumturquoise" cx="50%" cy="50%" r="50%" />
+  <circle fill="aquamarine" cx="50%" cy="50%" r="30%" />
+  <circle fill="mediumpurple" cx="50%" cy="50%" r="20%" />
+  <circle fill="orchid" cx="50%" cy="50%" r="10%" />
+</svg>
